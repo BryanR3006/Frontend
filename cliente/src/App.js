@@ -1,12 +1,15 @@
 import './App.css';
-
+import { BrowserRouter as Router,Route,Routes } from 'react-router-dom';
+import { BarraNavegacion } from './Components/Menu/BarraNavegacion';
+import dashboard from './pages/dashboard';
 function App() {
   return (
-    <div className="container text-center mt-5">
-      <h1 className="text-primary">Hola Bootstrap en React 🎉</h1>
-      <button className="btn btn-success segundary">Click aquí</button>
-    </div>
-    
+   <Router>
+    <BarraNavegacion/>
+    <Routes>
+      <Route path='/' element={<dashboard />} />
+    </Routes>
+   </Router>
 
   );
 }
