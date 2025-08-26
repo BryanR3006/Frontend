@@ -12,7 +12,5 @@ root.render(
     <App />
   </React.StrictMode>
 );
-connectDB();
-
 
 reportWebVitals();

@@ -4,8 +4,8 @@ export const connectDB = async () => {
   try {
     const connection = await mysql.createConnection({
       host: "localhost",
-      user: "root",     // tu usuario
-      password: "", // tu contraseña
+      user: "root",     
+      password: "",
       database: "mydb"
     });
     console.log("✅ Conectado a MySQL");
